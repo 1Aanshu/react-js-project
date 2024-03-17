@@ -4,6 +4,7 @@ import Effect from "./components/Effect";
 import { Website } from "./components/Website";
 import { EffectwithDeps } from "./components/EffectwithDeps";
 import { Dummy } from "./components/Dummy";
+import { Comp1 } from "./components/Context";
 const App = () => {
   return (
     <>
@@ -20,6 +21,8 @@ const App = () => {
       <EffectwithDeps />
       <hr />
       <Dummy />
+      <hr />
+      <Comp1/>
     </>
   );
 };
