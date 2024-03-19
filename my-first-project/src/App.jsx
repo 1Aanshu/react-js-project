@@ -5,6 +5,8 @@ import { Website } from "./components/Website";
 import { EffectwithDeps } from "./components/EffectwithDeps";
 import { Dummy } from "./components/Dummy";
 import { Comp1 } from "./components/Context";
+import { Theme } from "./components/Theme";
+import { ProductCall, UserCall } from "./components/PageCall";
 const App = () => {
   return (
     <>
@@ -22,7 +24,12 @@ const App = () => {
       <hr />
       <Dummy />
       <hr />
-      <Comp1/>
+      <Comp1 />
+      <hr />
+      <Theme />
+      <hr />
+      <ProductCall id={1} />
+      <UserCall id={1} />
     </>
   );
 };
