@@ -7,9 +7,15 @@ import { Dummy } from "./components/Dummy";
 import { Comp1 } from "./components/Context";
 import { Theme } from "./components/Theme";
 import { ProductCall, UserCall } from "./components/PageCall";
+import { Navbar } from "./components/Navbar";
+import { Profile } from "./components/Profile";
 const App = () => {
   return (
     <>
+      <Navbar />
+      <hr />
+      <Profile />
+      <hr />
       <States />
       <hr />
       <hr />

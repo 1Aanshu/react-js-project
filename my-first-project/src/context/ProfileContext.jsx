@@ -1,7 +1,7 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 
-export const ProfileContext = createContext(null);
+const ProfileContext = createContext(null);
 export const ProfileContextProvider = ({ children }) => {
   const [profile, setProfile] = useState({});
 
@@ -15,4 +15,12 @@ export const ProfileContextProvider = ({ children }) => {
       {children}
     </ProfileContext.Provider>
   );
+};
+
+export const useProfile = () => {
+  const context = useContext(ProfileContext);
+  if (context === undefined) {
+    throw new Error("Context must be valid");
+  }
+  return context;
 };
